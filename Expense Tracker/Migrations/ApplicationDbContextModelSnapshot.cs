@@ -34,7 +34,7 @@ namespace Expense_Tracker.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Titile")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)");
 

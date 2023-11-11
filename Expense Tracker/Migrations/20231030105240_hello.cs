@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Expense_Tracker.Migrations
 {
     /// <inheritdoc />
-    public partial class first : Migration
+    public partial class hello : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace Expense_Tracker.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Titile = table.Column<string>(type: "nvarchar(50)", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(50)", nullable: false),
                     Icon = table.Column<string>(type: "nvarchar(50)", nullable: false),
                     Type = table.Column<string>(type: "nvarchar(50)", nullable: false)
                 },

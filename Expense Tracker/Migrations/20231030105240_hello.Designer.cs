@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Expense_Tracker.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231018151243_first")]
-    partial class first
+    [Migration("20231030105240_hello")]
+    partial class hello
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,7 @@ namespace Expense_Tracker.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("Titile")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(50)");
 
